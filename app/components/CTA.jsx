@@ -45,7 +45,7 @@ export default function CTA() {
         </p>
         <div className="flex justify-center">
           <a
-            href="/checkout"
+            href="https://wa.me/6281339908765?text=Halo%2C%20saya%20mau%20pesan%20EduPlay" target="_blank" rel="noopener noreferrer"
             className="bg-[#dcdcdc] border border-gray-400 py-3 px-8 rounded-xl text-lg font-semibold shadow-[inset_4px_4px_10px_#bebebe,inset_-4px_-4px_10px_#ffffff] hover:shadow-[inset_-2px_-2px_5px_#ffffff,inset_2px_2px_5px_#bebebe] transition"
           >
             Coba Sekarang

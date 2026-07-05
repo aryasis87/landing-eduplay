@@ -31,9 +31,9 @@ export default function Footer() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="mb-4 flex justify-center gap-6 text-2xl text-indigo-600">
-          <a href="#" aria-label="Facebook"><FaFacebook /></a>
-          <a href="#" aria-label="Instagram"><FaInstagram /></a>
-          <a href="#" aria-label="Twitter"><FaTwitter /></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><FaFacebook /></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
         </div>
         <p className="text-sm">&copy; {new Date().getFullYear()} Aplikasi Imersif. Semua Hak Dilindungi.</p>
       </div>
