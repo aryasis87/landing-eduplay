@@ -1,7 +1,7 @@
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://landing-eduplay.vercel.app/sitemap.xml",
-    host: "https://landing-eduplay.vercel.app",
+    sitemap: "https://eduplay.pintuweb.com/sitemap.xml",
+    host: "https://eduplay.pintuweb.com",
   };
 }

@@ -4,10 +4,10 @@ import "./globals.css";
 const baloo = Baloo_2({ variable: "--font-baloo", subsets: ["latin"], weight: ["500", "600", "700", "800"] });
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"EduPlay","description":"Aplikasi edukasi & game imersif","url":"https://landing-eduplay.vercel.app","inLanguage":"id"};
+const __jsonld = {"@context":"https://schema.org","@type":"WebSite","name":"EduPlay","description":"Aplikasi edukasi & game imersif","url":"https://eduplay.pintuweb.com","inLanguage":"id"};
 
 export const metadata = {
-  metadataBase: new URL("https://landing-eduplay.vercel.app"),
+  metadataBase: new URL("https://eduplay.pintuweb.com"),
   title: "EduPlay — Belajar Sambil Bermain",
   description: "EduPlay: aplikasi edukasi & game imersif. Belajar jadi seru lewat dunia interaktif yang dirancang untuk pengalaman nyata.",
   applicationName: "EduPlay",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "EduPlay" }],
   creator: "EduPlay",
   publisher: "EduPlay",
-  alternates: { canonical: "https://landing-eduplay.vercel.app" },
+  alternates: { canonical: "https://eduplay.pintuweb.com" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://landing-eduplay.vercel.app",
+    url: "https://eduplay.pintuweb.com",
     siteName: "EduPlay",
     title: "EduPlay — Belajar Sambil Bermain",
     description: "EduPlay: aplikasi edukasi & game imersif. Belajar jadi seru lewat dunia interaktif yang dirancang untuk pengalaman nyata.",

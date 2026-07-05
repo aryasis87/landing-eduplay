@@ -1,5 +1,5 @@
 export default function sitemap() {
   return [
-    { url: "https://landing-eduplay.vercel.app", lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
+    { url: "https://eduplay.pintuweb.com", lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
   ];
 }
