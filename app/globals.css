@@ -1,32 +1,76 @@
 @import "tailwindcss";
 
-:root {
+/* ==========================================================================
+   EduPlay — bahasa rupa NEUMORFIS.
+   Seluruh bidang berdiri di atas satu warna dasar; kedalaman datang dari
+   sepasang bayangan (terang di kiri-atas, gelap di kanan-bawah), bukan dari
+   garis tepi.
+   ========================================================================== */
 
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-
-  }
+@theme {
+  --color-surface: #e0e0e0; /* warna dasar seluruh halaman */
+  --color-surface-raised: #f0f0f0; /* bidang yang terangkat */
+  --color-highlight: #ffffff; /* sisi kena cahaya */
+  --color-shade: #bebebe; /* sisi bayangan */
+  --color-surface-sunken: #dcdcdc; /* bidang yang cekung */
+  --color-brand: #6366f1; /* indigo — satu-satunya aksen */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* Sebelumnya memakai var(--background) dan var(--foreground) yang tidak
+     pernah didefinisikan di mana pun, sehingga keduanya tidak berlaku. */
+  background-color: var(--color-surface);
+  color: #3f3f46;
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
-h1, h2, h3 { font-family: var(--font-baloo), system-ui, sans-serif; letter-spacing: -0.01em; }
+h1,
+h2,
+h3 {
+  font-family: var(--font-baloo), system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
 
-/* EduPlay: titik confetti playful */
+/* --------------------------------------------------------------------------
+   1. Timbul & cekung — motif inti neumorfis
+   -------------------------------------------------------------------------- */
+.neu-raised {
+  background-color: var(--color-surface);
+  box-shadow:
+    -6px -6px 14px var(--color-highlight),
+    6px 6px 14px var(--color-shade);
+}
+
+.neu-sunken {
+  background-color: var(--color-surface);
+  box-shadow:
+    inset -5px -5px 11px var(--color-highlight),
+    inset 5px 5px 11px var(--color-shade);
+}
+
+/* --------------------------------------------------------------------------
+   2. Titik confetti playful
+   -------------------------------------------------------------------------- */
 .confetti-dots {
-  background-image: radial-gradient(rgba(99, 102, 241, 0.12) 2px, transparent 2px);
+  background-image: radial-gradient(rgb(99 102 241 / 0.12) 2px, transparent 2px);
   background-size: 26px 26px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Aksesibilitas
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:where(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
 }
