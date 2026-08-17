@@ -99,7 +99,7 @@ export default function Showcase() {
                 <Ilustrasi />
               </div>
               <h3 className="text-lg font-bold text-zinc-700">{title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-500">{desc}</p>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-700">{desc}</p>
             </div>
           ))}
         </div>
