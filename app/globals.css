@@ -14,13 +14,18 @@
   --color-shade: #bebebe; /* sisi bayangan */
   --color-surface-sunken: #dcdcdc; /* bidang yang cekung */
   --color-brand: #6366f1; /* indigo — satu-satunya aksen */
+  --color-brand-ink: #4338ca; /* indigo untuk teks & tombol (kontras 6:1 di atas surface) */
+  --color-ink: #27272a; /* teks utama */
+  --color-ink-2: #52525b; /* teks sekunder */
+  --color-pas: #166534; /* jawaban pas */
+  --color-meleset: #b91c1c; /* belum tepat */
 }
 
 body {
   /* Sebelumnya memakai var(--background) dan var(--foreground) yang tidak
      pernah didefinisikan di mana pun, sehingga keduanya tidak berlaku. */
   background-color: var(--color-surface);
-  color: #3f3f46;
+  color: var(--color-ink-2);
   font-family: var(--font-inter), system-ui, sans-serif;
 }
 
@@ -34,14 +39,14 @@ h3 {
 /* --------------------------------------------------------------------------
    1. Timbul & cekung — motif inti neumorfis
    -------------------------------------------------------------------------- */
-.neu-raised {
+@utility neu-raised {
   background-color: var(--color-surface);
   box-shadow:
     -6px -6px 14px var(--color-highlight),
     6px 6px 14px var(--color-shade);
 }
 
-.neu-sunken {
+@utility neu-sunken {
   background-color: var(--color-surface);
   box-shadow:
     inset -5px -5px 11px var(--color-highlight),
@@ -71,6 +76,6 @@ h3 {
 }
 
 :where(a, button, input, textarea, select, summary):focus-visible {
-  outline: 2px solid var(--color-brand);
+  outline: 2px solid var(--color-brand-ink);
   outline-offset: 3px;
 }

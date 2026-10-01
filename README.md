@@ -1,6 +1,6 @@
-# EduPlay — Belajar Sambil Bermain
+# EduPlay — Matematika SD, Sepuluh Menit Sehari
 
-EduPlay: aplikasi edukasi & game imersif. Belajar jadi seru lewat dunia interaktif yang dirancang untuk pengalaman nyata.
+EduPlay: latihan matematika kelas 1–3 SD lewat permainan sepuluh menit yang berhenti sendiri. Tanpa iklan, tanpa chat, bisa tanpa internet. Coba Teman Sepuluh dan Timbangan di peramban.
 
 **Demo live:** https://landing-eduplay.vercel.app
 
@@ -14,14 +14,16 @@ Bahasa rupa **Neumorfis**: seluruh bidang berdiri di atas satu warna dasar, dan 
 
 ## Halaman
 
-`/`
+- `/` — hero, satu ronde Teman Sepuluh yang bisa dimainkan, 12 pulau per kelas, contoh laporan mingguan orang tua, harga, FAQ
+- `/main` — dua permainan: Teman Sepuluh (pasangan 10) dan Timbangan (lengan miring beranimasi)
+- `/kurikulum` — 12 pulau kelas 1–3 dengan topik, nama permainan, dan contoh soal
 
 ## Teknologi
 
 - Next.js 15.5 (App Router) dan React 19
 - Tailwind CSS v4
 - JavaScript
-- Framer Motion, React Icons
+- Permainan & grafik laporan dibuat dengan React + SVG/CSS (tanpa pustaka animasi)
 - Font: Baloo 2, Inter (next/font)
 - SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
 
